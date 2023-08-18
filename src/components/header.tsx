@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="flex flex-col items-center justify-center w-full h-1/4 bg-red-500 p-4">
+    <header className="flex items-center justify-center w-full h-1/4 bg-red-500">
       <Link href="/">
         <h1 className="text-6xl font-bold text-center cursor-pointer">
           Tips **Home**

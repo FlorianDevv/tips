@@ -5,13 +5,21 @@ import data from "../../../../Data/tipsData.json";
 import View from "@/components/view";
 
 export default function Page({ params }: { params: { title: string } }) {
-  const tip: Tip | undefined = Object.values(data.Tips).find(
-    (tip: Tip) => tip.title === params.title
+  const tip: any | undefined = Object.values(data.Tips).find(
+    (tip: any) => tip.title === params.title
   );
 
   if (!tip) {
     return <div>Tip not found</div>;
   }
 
-  return <View title={tip.title} desc={tip.desc} img={tip.img} />;
+  return (
+    <View
+      title={tip.title}
+      desc={tip.desc}
+      img={tip.img}
+      images={Object.values(tip.images)}
+      texts={Object.values(tip.texts)}
+    />
+  );
 }

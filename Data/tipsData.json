@@ -3,12 +3,34 @@
     "TipsTest": {
       "title": "testTitle",
       "desc": "testDesc",
-      "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+      "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+      "images": {
+        "1": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+        "2": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+        "3": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+        "4": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+        "5": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+        "6": "",
+        "7": "",
+        "8": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+      },
+      "texts": {
+        "1": "|h1| text 1",
+        "2": "|h2| text 2",
+        "3": "|h3| text 3",
+        "4": "|h4| text 4",
+        "5": "text 5",
+        "6": "text 6",
+        "7": "text 7",
+        "8": ""
+      }
     },
     "TipsTest2": {
       "title": "testTitle2",
       "desc": "testDesc2",
-      "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg"
+      "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg",
+      "images": {},
+      "texts": {}
     }
   }
 }
