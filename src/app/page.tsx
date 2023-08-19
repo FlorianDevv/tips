@@ -1,5 +1,3 @@
-import { Tip } from "../../Data/types";
-import Image from "next/image";
 import Card from "../components/card";
 import data from "../../Data/tipsData.json";
 

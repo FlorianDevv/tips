@@ -1,7 +1,12 @@
+import Card from "@/components/card";
+import data from "../../../Data/tipsData.json";
+
 export default function Home() {
   return (
     <>
-      <h1>Tip default</h1>
+      {Object.values(data.Tips).map((tip: any, index: number) => (
+        <Card title={tip.title} desc={tip.desc} img={tip.img} key={index} />
+      ))}
     </>
   );
 }
