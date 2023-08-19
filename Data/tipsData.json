@@ -27,23 +27,23 @@
 
   "Tips": {
     "TipsTest": {
-      "title": "testTitle",
+      "title": "testTitletrue",
       "desc": "testDesc It's a very long description that should be cut",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
-        "1": "|100vw||m-4| https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "2": "|50vw|| | https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "3": "| || | https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "4": "| || | https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "5": "| || | https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "6": "| || | ",
-        "7": "| || | ",
-        "8": "| || | https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png"
+        "1": "|30vw||m-4  |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+        "2": "|10vw|| |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+        "3": "|100px|| |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+        "6": "| || |",
+        "7": "| || |",
+        "8": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png"
       },
       "texts": {
-        "1": "|text-3xl text-center| text 1",
-        "2": "|text-4xl text-start| text 2",
-        "3": "|text-2xl text-end color| text 3",
+        "1": "|text-xl justify-center |text 1",
+        "2": "|text-4xl |text 2",
+        "3": "|text-2xl |text 3",
         "4": "| | text 4",
         "5": "| | text 5",
         "6": "|text-2xl| text 6",

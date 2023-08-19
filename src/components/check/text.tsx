@@ -7,5 +7,5 @@ interface TextProps {
 export default function Text(props: TextProps) {
   const [className, content] = props.text.split("|").filter(Boolean);
 
-  return <p className={`${className}`}>{content}</p>;
+  return <p className={`flex ${className}`}>{content}</p>;
 }

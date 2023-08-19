@@ -12,12 +12,11 @@ export default function Images(props: ImageProps) {
   }
   return (
     <Image
-      className={`${className}`}
+      className={`${className} flex w-auto h-auto`}
       src={content}
-      sizes={sizes || "60vw"}
-      width={200}
-      height={200}
-      layout="responsive"
+      sizes={sizes}
+      width={400}
+      height={400}
       alt=""
     ></Image>
   );

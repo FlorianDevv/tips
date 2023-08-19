@@ -6,9 +6,11 @@ import Image from "next/image";
 // It receives a Tip object as props
 export default function View(props: Tip) {
   return (
-    <div className="flex flex-col items-center justify-center mt-2">
-      <Image src={props.img} alt="image tips" width={500} height={500} />
-      <h1 className="text-6xl font-bold text-center">{props.title}</h1>
+    <div className="flex flex-col  mt-2">
+      <div className="flex flex-col items-center justify-center">
+        <Image src={props.img} alt="image tips" width={500} height={500} />
+        <h1 className="text-6xl font-bold text-center">{props.title}</h1>
+      </div>
       <p className="text-2xl text-center">{props.desc}</p>
       {/* // For each image and text in the tip, a div is created with the corresponding component */}
       {props.images.map((image, index) => (
