@@ -1,5 +1,3 @@
-//the card includes the image, title, and description of the tips
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,28 +6,26 @@ interface CardProps {
   desc: string;
   img: string;
 }
+
 export default function Card(props: CardProps) {
   return (
     <Link
       href={`/tips/${props.title}`}
-      className="flex flex-col items-center justify-center p-4 m-4 rounded-lg shadow-xl w-fit bg-gradient-to-br  backdrop-filter backdrop-blur-lg backdrop-saturate-150 hover:scale-105 transform transition-all duration-300 ease-in-out"
+      className="flex flex-col items-center justify-center p-5 m-4 rounded-xl shadow-md shadow-indigo-800/50 bg-[rgba(17, 25, 40, 1)] backdrop-blur-xl backdrop-saturate-200 hover:scale-105 transform transition-all duration-300 ease-in-out truncate  "
     >
-      <div>
-        {" "}
-        <Image
-          className="opacity-90"
-          src={props.img}
-          alt="image tips"
-          width={400}
-          height={400}
-        />
-        <h1 className="text-white text-6xl font-bold text-center text-opacity-90">
-          {props.title}
-        </h1>
-        <p className="text-white text-2xl text-center text-opacity-75">
-          {props.desc}
-        </p>
-      </div>
+      <Image
+        className="opacity-90"
+        src={props.img}
+        alt="image tips"
+        width={400}
+        height={400}
+      />
+      <h1 className="text-white text-4xl font-bold text-center text-opacity-90 truncate ">
+        {props.title}
+      </h1>
+      <p className="text-white text-2xl text-center text-opacity-75 overflow-hidden text-ellipsis whitespace-nowrap truncate ">
+        {props.desc}
+      </p>
     </Link>
   );
 }

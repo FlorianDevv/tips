@@ -12,3 +12,28 @@ html{
     color: #fff;
     font-family: 'Inter', sans-serif;
 }
+
+/* custom scrollbar glasmorphism black purple blue */
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #1c1c1c;
+
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(145deg, #2d2d2d, #1c1c1c);
+    border-radius: 10px;
+    border: 2px solid #1c1c1c;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(145deg, #1c1c1c, #2d2d2d);
+}
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(145deg, #1c1c1c, #2d2d2d);
+}
+::-webkit-scrollbar-track {
+    background: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #1c1c1c;
+}

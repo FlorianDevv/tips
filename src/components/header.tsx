@@ -3,10 +3,10 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="flex flex-row items-center justify-center p-4 bg-blur border border-gray-800 border-opacity-50 border-b-4 ">
+    <header className="flex flex-row z-10 sticky top-0 w-full justify-center p-4  bg-blur bg-gray-400 bg-opacity-10 backdrop-filter backdrop-blur-lg backdrop-saturate-150 shadow-xl">
       <Link
         href="/"
-        className="text-xl flex font-bold cursor-pointer brightness-90 hover:brightness-200 hover:scale-105 transform transition-all duration-300 ease-in-out m-5 mb-0 mt-0"
+        className="text-xl flex font-bold cursor-pointer brightness-90 hover:brightness-200 hover:scale-105 transform transition-all duration-300 ease-in-out m-5 mb-0 mt-0 hover:drop-shadow-[0_2px_8px_rgba(255,255,255,0.70)]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -26,7 +26,7 @@ export default function Header() {
 
       <Link
         href="/tips"
-        className="text-xl flex font-bold cursor-pointer brightness-90 hover:brightness-200 hover:scale-105 transform transition-all duration-300 ease-in-out m-5 mb-0 mt-0"
+        className="text-xl flex font-bold cursor-pointer brightness-90 hover:brightness-200 hover:scale-105 transform transition-all duration-300 ease-in-out m-5 mb-0 mt-0 hover:drop-shadow-[0_2px_8px_rgba(255,255,255,0.70)]"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
