@@ -55,7 +55,7 @@ export default function Category() {
         </div>
         {showMenu && (
           <ul
-            className={`sticky p-2 bg-gray-800 text-white rounded-md shadow-md z-50 mt-2 border border-gray-700 transition-all max-w-xs ${
+            className={`sticky p-2 bg-gray-800 text-white rounded-md shadow-md z-50 mt-2 border border-gray-700 transition-all duration-300 ease-in-out max-w-xs ${
               showMenu ? "opacity-100 max-h-96" : "opacity-0 max-h-0"
             }`}
           >
