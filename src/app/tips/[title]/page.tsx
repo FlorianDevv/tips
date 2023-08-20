@@ -16,7 +16,7 @@ export default function Page({ params }: { params: { title: string } }) {
   return (
     <View
       title={tip.title}
-      desc={tip.desc}
+      category={tip.category}
       img={tip.img}
       images={Object.values(tip.images)}
       texts={Object.values(tip.texts)}

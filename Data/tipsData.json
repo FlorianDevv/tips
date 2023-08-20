@@ -1,7 +1,20 @@
 {
+  "Category": [
+    "Gaming",
+    "Cinema",
+    "Finance",
+    "IOS",
+    "Android",
+    "Windows",
+    "Mac",
+    "Linux",
+    "Web",
+    "Other"
+  ],
+
   "Template": {
     "title": "",
-    "desc": "",
+    "category": "",
     "img": "",
     "images": {
       "1": "| || | ",
@@ -28,7 +41,7 @@
   "Tips": {
     "TipsTest": {
       "title": "testTitletrue",
-      "desc": "testDesc It's a very long description that should be cut",
+      "category": "Gaming",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
         "1": "|30vw||m-4  |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
@@ -53,14 +66,14 @@
     },
     "TipsTest2": {
       "title": "testTitle2",
-      "desc": "testDesc2",
+      "category": "Cinema",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142397984210960516/street_fighter_6_wallpaper.jpg",
       "images": {},
       "texts": {}
     },
     "TipsTest3": {
       "title": "testTitle",
-      "desc": "testDesc",
+      "category": "Money",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
         "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
@@ -85,7 +98,7 @@
     },
     "TipsTest4": {
       "title": "testTitle",
-      "desc": "testDesc",
+      "category": "idk",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
         "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
@@ -110,7 +123,7 @@
     },
     "TipsTest5": {
       "title": "testTitle",
-      "desc": "testDesc",
+      "category": "something",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
         "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",

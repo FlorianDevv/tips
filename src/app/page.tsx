@@ -9,7 +9,12 @@ export default function Home() {
         {Object.values(data.Tips)
           .reverse()
           .map((tip: any, index: number) => (
-            <Card title={tip.title} desc={tip.desc} img={tip.img} key={index} />
+            <Card
+              title={tip.title}
+              category={tip.category}
+              img={tip.img}
+              key={index}
+            />
           ))}
       </div>
     </>

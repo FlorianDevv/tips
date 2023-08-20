@@ -1,6 +1,6 @@
 export type Tip = {
   title: string;
-  desc: string;
+  category: string;
   img: string;
   images: string[];
   texts: string[];
