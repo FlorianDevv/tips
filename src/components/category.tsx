@@ -78,6 +78,7 @@ export default function Category() {
         <div className="flex flex-row flex-wrap justify-center">
           {sortedTips.map((tip: any, index: number) => (
             <Card
+              url={tip.url}
               title={tip.title}
               category={tip.category}
               img={tip.img}
