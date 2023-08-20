@@ -1,5 +1,3 @@
-import Card from "@/components/card";
-import data from "../../../Data/tipsData.json";
 import Category from "@/components/category";
 
 export default function Home() {
@@ -7,19 +5,9 @@ export default function Home() {
     <>
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl font-bold text-center">Tips</h1>
-        <p className="text-2xl text-center">Order tips by categories </p>
+        <p className="text-2xl text-center">Search tips by categories </p>
       </div>
       <Category />
-      <div className="flex flex-row flex-wrap justify-center">
-        {Object.values(data.Tips).map((tip: any, index: number) => (
-          <Card
-            title={tip.title}
-            category={tip.category}
-            img={tip.img}
-            key={index}
-          />
-        ))}
-      </div>
     </>
   );
 }
