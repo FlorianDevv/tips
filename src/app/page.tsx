@@ -4,8 +4,14 @@ import data from "../../Data/tipsData.json";
 export default function Home() {
   return (
     <>
-      <h1 className="text-6xl font-bold text-center">Last tips</h1>
-      <div className="flex flex-collum flex-wrap justify-center ">
+      <div className="flex flex-col items-center justify-center mt-5 mb-20">
+        <h1 className="text-6xl font-bold text-center">Tips</h1>
+        <p className="text-2xl text-center">
+          See a lot of tips for your life !{" "}
+        </p>
+      </div>
+      <h1 className="text-3xl font-bold text-center">Last tips:</h1>
+      <div className="mx-5 flex flex-row justify-center overflow-x-auto whitespace-nowrap">
         {Object.values(data.Tips)
           .reverse()
           .map((tip: any, index: number) => (
