@@ -5,12 +5,13 @@ interface CardProps {
   title: string;
   category: string;
   img: string;
+  url: string;
 }
 
 export default function Card(props: CardProps) {
   return (
     <Link
-      href={`/tips/${props.title}`}
+      href={`/tips/${props.url}`}
       className="flex flex-col basis-[30rem] items-center justify-center p-5 m-4 hover:scale-105 transform transition-all duration-300 ease-in-out truncate rounded-lg shadow-xl bg-opacity-5 bg-gray-200 hover:shadow-xl hover:ring-2 hover:ring-white hover:brightness-110"
     >
       <Image

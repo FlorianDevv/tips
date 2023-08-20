@@ -1,13 +1,9 @@
-import { Tip } from "../../../../Data/types";
-import Image from "next/image";
-import Card from "../../../components/card";
 import data from "../../../../Data/tipsData.json";
 import View from "@/components/view";
 
-export default function Page({ params }: { params: { title: string } }) {
-  const tip: any | undefined = Object.values(data.Tips).find(
-    (tip: any) => tip.title === params.title
-  );
+export default function Page({ params }: { params: { url: string } }) {
+  let tip: any;
+  tip = Object.values(data.Tips).find((tip: any) => tip.url === params.url);
 
   if (!tip) {
     return <div>Tip not found</div>;
@@ -20,6 +16,7 @@ export default function Page({ params }: { params: { title: string } }) {
       img={tip.img}
       images={Object.values(tip.images)}
       texts={Object.values(tip.texts)}
+      url={tip.url}
     />
   );
 }

@@ -13,6 +13,7 @@
   ],
 
   "Template": {
+    "url": "",
     "title": "",
     "category": "",
     "img": "",
@@ -40,7 +41,8 @@
 
   "Tips": {
     "TipsTest": {
-      "title": "testTitletrue",
+      "url": "TipsTest",
+      "title": "testTitletrue1",
       "category": "Gaming",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
@@ -65,6 +67,7 @@
       }
     },
     "TipsTest2": {
+      "url": "testTitle2",
       "title": "testTitle2",
       "category": "Cinema",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142397984210960516/street_fighter_6_wallpaper.jpg",
@@ -72,7 +75,8 @@
       "texts": {}
     },
     "TipsTest3": {
-      "title": "testTitle",
+      "url": "testTitle3",
+      "title": "testTitle3",
       "category": "Money",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
@@ -97,7 +101,8 @@
       }
     },
     "TipsTest4": {
-      "title": "testTitle",
+      "url": "testTitle4",
+      "title": "testTitle4",
       "category": "idk",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
@@ -122,8 +127,9 @@
       }
     },
     "TipsTest5": {
-      "title": "testTitle",
-      "category": "something",
+      "url": "testTitleG2-test-pcq",
+      "title": "testTitleG2 test pcq",
+      "category": "Gaming",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
       "images": {
         "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",

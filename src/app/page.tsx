@@ -10,6 +10,7 @@ export default function Home() {
           .reverse()
           .map((tip: any, index: number) => (
             <Card
+              url={tip.url}
               title={tip.title}
               category={tip.category}
               img={tip.img}

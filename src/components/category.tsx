@@ -30,13 +30,11 @@ export default function Category() {
           (tip: any) => tip.category === selectedCategory
         );
 
-  const sortedTips = filteredTips.sort((a: any, b: any) => {
-    if (sortOrder === "newest") {
-      return b.index - a.index;
-    } else {
-      return a.index - b.index;
-    }
-  });
+  const sortedTips = [...filteredTips];
+
+  if (sortOrder === "newest") {
+    sortedTips.reverse();
+  }
 
   return (
     <div className="relative mx-auto">
