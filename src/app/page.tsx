@@ -24,7 +24,7 @@ export default function Home() {
             />
           ))}
       </div>
-      <h1 className="text-3xl font-bold text-center mt-20">Best tips:</h1>
+      <h1 className="text-3xl font-bold text-center mt-20">Your Likes ❤️</h1>
       <div className="mx-5 flex flex-row  overflow-x-auto  ">
         <p className="m-10 text-2xl text-center">Coming soon !</p>
       </div>
