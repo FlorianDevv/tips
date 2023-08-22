@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSpring, animated } from "@react-spring/web";
 
 interface Props {
   url: string;
@@ -9,6 +10,7 @@ interface Props {
 export default function LikeButton(props: Props) {
   const [liked, setLiked] = useState(false);
   const [likes, setLikes] = useState(0);
+  const [animating, setAnimating] = useState(false);
 
   useEffect(() => {
     // Retrieve the like state from local storage
@@ -34,11 +36,8 @@ export default function LikeButton(props: Props) {
       // Store the like state in local storage
       localStorage.setItem(`liked-${props.url}`, "true");
       setLiked(true);
-    }
-  };
-
-  const handleUnlike = () => {
-    if (liked) {
+      setAnimating(true);
+    } else {
       // Decrement the total number of likes and store it in local storage
       const newLikesCount = likes - 1;
       localStorage.setItem(`likes-${props.url}`, newLikesCount.toString());
@@ -47,26 +46,27 @@ export default function LikeButton(props: Props) {
       // Remove the like state from local storage
       localStorage.removeItem(`liked-${props.url}`);
       setLiked(false);
+      setAnimating(true);
     }
   };
 
+  const animationProps = useSpring({
+    transform: animating ? "scale(1.5)" : "scale(1)",
+    config: { tension: 300, friction: 10 },
+    onRest: () => setAnimating(false),
+  });
+
   return (
     <div className="flex items-center space-x-2">
-      <button
-        className={`p-2 rounded-full ${liked ? "bg-red-900 " : "bg-gray-200"}`}
+      <animated.button
+        className={`p-2 rounded-full bg-gray-200 bg-opacity-50 hover:bg-opacity-70 shadow-lg ${
+          liked ? "bg-red-900 " : ""
+        }`}
         onClick={handleLike}
-        disabled={liked}
+        style={animationProps}
       >
-        <p className="text-xl">❤️</p>
-      </button>
-      <button
-        className={`p-2 rounded-full ${liked ? "bg-gray-200 " : "bg-red-900"}`}
-        onClick={handleUnlike}
-        disabled={!liked}
-      >
-        <p className="text-xl">💔</p>
-      </button>
-      <span className="text-gray-500">{likes}</span>
+        <p className="text-xl">{liked ? "❤️" : "🤍"}</p>
+      </animated.button>
     </div>
   );
 }
