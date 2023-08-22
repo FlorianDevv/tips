@@ -25,17 +25,14 @@ export default function Card(props: CardProps) {
           width={400}
           height={400}
         />
-        <h1 className="text-white text-2xl font-bold text-center text-opacity-90 truncate ">
+        <h1 className="text-white text-xl font-bold text-center text-opacity-90 truncate ">
           {props.title}
         </h1>
         <div className="flex flex-row items-center justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 14 14"
-            fill="none"
-            x="0px"
-            y="0px"
-            className="w-6 h-6 text-white"
+            className="w-5 h-5 "
           >
             <path
               fillRule="evenodd"
@@ -44,7 +41,7 @@ export default function Card(props: CardProps) {
               fill="white"
             />
           </svg>
-          <p className="text-white text-xl text-center text-opacity-75  ">
+          <p className="text-white text-lg text-center text-opacity-75  ">
             {props.category}
           </p>
         </div>
