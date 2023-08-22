@@ -2,7 +2,10 @@
   "Category": [
     "Gaming",
     "Cinema",
-    "Finance",
+    "Food",
+    "Divertissment",
+    "Money",
+    "Music",
     "IOS",
     "Android",
     "Windows",
@@ -40,80 +43,20 @@
   },
 
   "Tips": {
-    "TipsTest": {
-      "url": "TipsTest",
-      "title": "testTitletrue1",
-      "category": "Gaming",
-      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-      "images": {
-        "1": "|30vw||m-4  |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "2": "|10vw|| |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "3": "|100px|| |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "6": "| || |",
-        "7": "| || |",
-        "8": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png"
-      },
-      "texts": {
-        "1": "|text-xl justify-center |text 1",
-        "2": "|text-4xl |text 2",
-        "3": "|text-2xl |text 3",
-        "4": "| | text 4",
-        "5": "| | text 5",
-        "6": "|text-2xl| text 6",
-        "7": "| | text 7",
-        "8": "|text-center text-2xl| text 8"
-      }
-    },
-    "TipsTest2": {
-      "url": "testTitle2",
-      "title": "testTitle2",
-      "category": "Cinema",
-      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142397984210960516/street_fighter_6_wallpaper.jpg",
-      "images": {},
-      "texts": {}
-    },
-    "TipsTest3": {
-      "url": "testTitle3",
-      "title": "testTitle3",
-      "category": "Money",
-      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-      "images": {
-        "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "2": "|50vw|| |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "3": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "6": "| || | ",
-        "7": "| || | ",
-        "8": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png"
-      },
-      "texts": {
-        "1": "|text-3xl text-center| text 1",
-        "2": "|text-4xl text-start| text 2",
-        "3": "|text-2xl text-end color| text 3",
-        "4": "| | text 4",
-        "5": "| | text 5",
-        "6": "|text-2xl| text 6",
-        "7": "| | text 7",
-        "8": "|text-center text-2xl| text 8"
-      }
-    },
     "TipsTest4": {
-      "url": "testTitle4",
-      "title": "testTitle4",
-      "category": "idk",
-      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+      "url": "Template2",
+      "title": "Template2",
+      "category": "Music",
+      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
       "images": {
-        "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "2": "|50vw|| |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "3": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+        "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "2": "|50vw|| |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "3": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
         "6": "| || | ",
         "7": "| || | ",
-        "8": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png"
+        "8": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp"
       },
       "texts": {
         "1": "|text-3xl text-center| text 1",
@@ -127,19 +70,97 @@
       }
     },
     "TipsTest5": {
-      "url": "testTitleG2-test-pcq",
-      "title": "testTitleG2 test pcq",
+      "url": "Template1",
+      "title": "Template1",
       "category": "Gaming",
-      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
       "images": {
-        "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "2": "|50vw|| |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "3": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
-        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png",
+        "1": "|100vw||m-4|https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "2": "|50vw|| |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "3": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
+        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp",
         "6": "| || | ",
         "7": "| || | ",
-        "8": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1142396935291011142/ippo.png"
+        "8": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1143571517859442828/image-placeholder.webp"
+      },
+      "texts": {
+        "1": "|text-3xl text-center| text 1",
+        "2": "|text-4xl text-start| text 2",
+        "3": "|text-2xl text-end color| text 3",
+        "4": "| | text 4",
+        "5": "| | text 5",
+        "6": "|text-2xl| text 6",
+        "7": "| | text 7",
+        "8": "|text-center text-2xl| text 8"
+      }
+    },
+    "Burgerking1": {
+      "url": "Burger-king-pour-moins-cher",
+      "title": "Burger king pour moins cher ? ",
+      "category": "Food,Money",
+      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1143555604519080038/burgerking.webp",
+      "images": {
+        "1": "|30vw||m-4|",
+        "2": "|300vw|| mx-auto | https://cdn.discordapp.com/attachments/1142396385472282786/1143556857185718272/menu-etudiant-burger-king-min.webp",
+        "3": "|100px|| |",
+        "4": "| || |",
+        "5": "| || |",
+        "6": "| || |",
+        "7": "| || |",
+        "8": "| || |"
+      },
+      "texts": {
+        "1": "|text-xl justify-center |Connaisais-tu le menu secret de Burger King ?",
+        "2": "|text-4xl |Tip 1 Description",
+        "3": "|text-2xl |Additional Info",
+        "4": "| | More Info",
+        "5": "| | Even More Info",
+        "6": "|text-2xl| Additional Details",
+        "7": "| | Important Note",
+        "8": "|text-center text-2xl| Conclusion"
+      }
+    },
+    "Animesama": {
+      "url": "Anime-sama",
+      "title": "Un site pour regarder des animes gratuitement ?",
+      "category": "Divertissment",
+      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1143563371397009558/anime-sama.webp",
+      "images": {
+        "1": "|30vw||m-4|",
+        "2": "|100vw|| mx-auto |https://cdn.discordapp.com/attachments/1142396385472282786/1143565281575321641/page-principale.webp",
+        "3": "|100px|| |",
+        "4": "| || |",
+        "5": "| || |",
+        "6": "| || |",
+        "7": "| || |",
+        "8": "| || |"
+      },
+      "texts": {
+        "1": "|text-xl justify-center | Anime-Sama est un site de référencement et de catalogage sans publicités dérangeantes, créé par des passionnés de l'animation et du divertissement APAC.",
+        "2": "|text-4xl |La suite bientôt",
+        "3": "|text-2xl |",
+        "4": "| | ",
+        "5": "| | ",
+        "6": "|text-2xl| ",
+        "7": "| | ",
+        "8": "|text-center text-2xl| "
+      }
+    },
+    "Steam1": {
+      "url": "Jouer-aux-jeux-steam-gratuitement-de-vos-amis",
+      "title": "Jouer aux jeux steam gratuitement de vos amis ?",
+      "category": "Money",
+      "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1143571137238929520/steam_free.webp",
+      "images": {
+        "1": "|100vw||m-4|",
+        "2": "|50vw|| |",
+        "3": "| || |",
+        "4": "| || |",
+        "5": "| || |",
+        "6": "| || | ",
+        "7": "| || | ",
+        "8": "| || |"
       },
       "texts": {
         "1": "|text-3xl text-center| text 1",
