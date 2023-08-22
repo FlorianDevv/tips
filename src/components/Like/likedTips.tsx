@@ -4,16 +4,20 @@ import Card from "../card";
 import data from "../../../Data/tipsData.json";
 
 export default function LikedTips() {
-  const likedTipsUrls = Object.keys(localStorage).filter((key) =>
-    key.startsWith("liked-")
-  );
+  let likedTips: any[] = [];
 
-  const likedTips = likedTipsUrls.map((url) => {
-    const tip = Object.values(data.Tips).find(
-      (tip: any) => `liked-${tip.url}` === url
+  if (typeof window !== "undefined") {
+    const likedTipsUrls = Object.keys(localStorage).filter((key) =>
+      key.startsWith("liked-")
     );
-    return tip;
-  });
+
+    likedTips = likedTipsUrls.map((url) => {
+      const tip = Object.values(data.Tips).find(
+        (tip: any) => `liked-${tip.url}` === url
+      );
+      return tip;
+    });
+  }
 
   return (
     <>
