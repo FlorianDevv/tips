@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
@@ -9,7 +8,6 @@ interface Props {
 
 export default function LikeButton(props: Props) {
   const [liked, setLiked] = useState(false);
-  const [likes, setLikes] = useState(0);
   const [animating, setAnimating] = useState(false);
 
   useEffect(() => {
@@ -18,31 +16,15 @@ export default function LikeButton(props: Props) {
     if (likedState) {
       setLiked(true);
     }
-
-    // Retrieve the total number of likes from local storage
-    const likesCount = localStorage.getItem(`likes-${props.url}`);
-    if (likesCount) {
-      setLikes(parseInt(likesCount));
-    }
   }, [props.url]);
 
   const handleLike = () => {
     if (!liked) {
-      // Increment the total number of likes and store it in local storage
-      const newLikesCount = likes + 1;
-      localStorage.setItem(`likes-${props.url}`, newLikesCount.toString());
-      setLikes(newLikesCount);
-
       // Store the like state in local storage
       localStorage.setItem(`liked-${props.url}`, "true");
       setLiked(true);
       setAnimating(true);
     } else {
-      // Decrement the total number of likes and store it in local storage
-      const newLikesCount = likes - 1;
-      localStorage.setItem(`likes-${props.url}`, newLikesCount.toString());
-      setLikes(newLikesCount);
-
       // Remove the like state from local storage
       localStorage.removeItem(`liked-${props.url}`);
       setLiked(false);

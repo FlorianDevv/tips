@@ -1,5 +1,4 @@
 "use client";
-
 import Card from "../card";
 import data from "../../../Data/tipsData.json";
 
@@ -11,12 +10,14 @@ export default function LikedTips() {
       key.startsWith("liked-")
     );
 
-    likedTips = likedTipsUrls.map((url) => {
-      const tip = Object.values(data.Tips).find(
-        (tip: any) => `liked-${tip.url}` === url
-      );
-      return tip;
-    });
+    likedTips = likedTipsUrls
+      .map((url) => {
+        const tip = Object.values(data.Tips).find(
+          (tip: any) => `liked-${tip.url}` === url
+        );
+        return tip;
+      })
+      .filter((tip) => tip !== undefined);
   }
 
   return (
