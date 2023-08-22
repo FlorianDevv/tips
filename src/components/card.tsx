@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import LikeButton from "./likes";
+import LikeButton from "./Like/likes";
 
 interface CardProps {
   title: string;

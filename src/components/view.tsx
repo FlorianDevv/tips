@@ -2,7 +2,8 @@ import { Tip } from "../../Data/types";
 import Text from "../components/check/text";
 import Images from "../components/check/image";
 import Image from "next/image";
-import LikeButton from "./likes";
+import LikeButton from "./Like/likes";
+
 // This component displays a set of tips with images and text
 // It receives a Tip object as props
 export default function View(props: Tip) {
@@ -14,14 +15,14 @@ export default function View(props: Tip) {
       </div>
       <div className="flex flex-row items-center justify-center">
         <p className="text-xl text-center mr-4">{props.category}</p>
-        <LikeButton />
+        <LikeButton url={props.url} />
       </div>
-      {/* // For each image and text in the tip, a div is created with the corresponding component */}
+      {/* For each image and text in the tip, a div is created with the corresponding component */}
       {props.images.map((image, index) => (
         <div key={index}>
-          {/* // If there is an image, it is displayed with the Images component */}
+          {/* If there is an image, it is displayed with the Images component */}
           {image && <Images image={image} />}
-          {/* // If there is text, it is displayed with the Text component */}
+          {/* If there is text, it is displayed with the Text component */}
           {props.texts[index] && <Text text={props.texts[index]} />}
         </div>
       ))}
