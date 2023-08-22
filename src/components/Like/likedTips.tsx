@@ -35,7 +35,7 @@ export default function LikedTips() {
             />
           ))
         ) : (
-          <p className="text-center text-gray-500 mt-4">No liked tips yet.</p>
+          <p className="mx-auto text-gray-500 mt-4">No liked tips yet.</p>
         )}
       </div>
     </>
