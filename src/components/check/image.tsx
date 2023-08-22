@@ -30,7 +30,7 @@ export default function Images(props: ImageProps) {
   }
   return (
     <Image
-      className={`${className} flex w-auto h-auto`}
+      className={`${className} flex w-auto h-auto my-5`}
       src={content}
       placeholder="blur"
       blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
