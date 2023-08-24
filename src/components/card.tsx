@@ -14,7 +14,7 @@ export default function Card(props: CardProps) {
     <>
       <Link
         href={`/tips/${props.url}`}
-        className="flex flex-col shrink-0  items-center justify-center p-4 m-4 hover:scale-105 transform transition-all duration-300 ease-in-out  rounded-lg shadow-xl bg-opacity-5 bg-gray-200 hover:shadow-xl hover:ring-2 hover:ring-white hover:brightness-110"
+        className="flex flex-col items-center justify-center p-4 m-4 hover:scale-105 transform transition-all duration-300 ease-in-out rounded-lg shadow-xl bg-opacity-5 bg-gray-200 hover:shadow-xl hover:ring-2 hover:ring-white hover:brightness-110 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
       >
         <Image
           className="opacity-90"
@@ -22,10 +22,10 @@ export default function Card(props: CardProps) {
           alt="image tips"
           placeholder="blur"
           blurDataURL={"src/images/placeholder.webp"}
-          width={400}
-          height={400}
+          width={500}
+          height={500}
         />
-        <h1 className="text-white text-xl font-bold text-center text-opacity-90 truncate ">
+        <h1 className="text-white text-xl font-bold text-center text-opacity-90 flex flex-warp max-w-full">
           {props.title}
         </h1>
         <div className="flex flex-row items-center justify-center">
