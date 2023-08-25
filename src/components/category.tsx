@@ -41,26 +41,28 @@ export default function Category() {
     <div className="relative mx-auto">
       <div className="flex flex-col items-center ">
         <div className="flex flex-row items-center ">
-          <div className="bg-gray-800 text-white px-4 py-2 rounded-md">
+          <div className="bg-gray-800 text-white px-4 py-2 rounded-md bg-blur bg-opacity-10 backdrop-filter backdrop-blur-lg backdrop-saturate-150 shadow-xl">
             Categories:{" "}
             {selectedCategories.length === 0
               ? "All categories"
               : selectedCategories.join(", ")}
           </div>
           <button
-            className="bg-gray-800 text-white px-4 py-2 rounded-md ml-2"
+            className="bg-gray-800 text-white px-4 py-2 rounded-md bg-blur bg-opacity-10 backdrop-filter backdrop-blur-lg backdrop-saturate-150 shadow-xl ml-2 hover:bg-gray-700 transition-all duration-300 ease-in-out hover:bg-blur hover:bg-opacity-70 hover:backdrop-filter hover:backdrop-blur-lg hover:backdrop-saturate-150 hover:shadow-xl"
             onClick={handleSortOrderClick}
           >
             {sortOrder === "newest" ? "Sort by oldest" : "Sort by newest"}
           </button>
         </div>
-        <ul className="p-2 bg-gray-800 text-white rounded-md shadow-md mt-2 border border-gray-700 transition-all duration-300 ease-in-out max-w-lg grid grid-cols-3 gap-2">
+        <ul className="p-2 bg-gray-800 text-white rounded-md  mt-2 border border-gray-700 transition-all duration-300 ease-in-out max-w-lg grid grid-cols-3 gap-2  justify-center bg-blur  bg-opacity-10 backdrop-filter backdrop-blur-lg backdrop-saturate-150 shadow-xl">
           {data.Category.map((category) => (
             <li
               key={category}
               onClick={() => handleCategoryClick(category)}
-              className={`cursor-pointer py-1 px-2 rounded-md hover:bg-gray-600 ${
-                selectedCategories.includes(category) ? "bg-gray-700" : ""
+              className={`cursor-pointer py-1 px-2 rounded-md hover:bg-gray-700 transition-all duration-300 ease-in-out hover:bg-blur hover:bg-opacity-70 hover:backdrop-filter hover:backdrop-blur-lg hover:backdrop-saturate-150 hover:shadow-xl ${
+                selectedCategories.includes(category)
+                  ? "bg-blur bg-gray-600 bg-opacity-70 backdrop-filter backdrop-blur-lg backdrop-saturate-150 shadow-xl"
+                  : ""
               }`}
             >
               {category}
