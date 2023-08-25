@@ -11,7 +11,7 @@ export default function View(props: Tip) {
     <div className="flex flex-col  mt-2">
       <div className="flex flex-col items-center justify-center">
         <Image src={props.img} alt="image tips" width={500} height={500} />
-        <h1 className="text-6xl font-bold text-center">{props.title}</h1>
+        <h1 className="text-4xl font-bold text-center">{props.title}</h1>
       </div>
       <div className="flex flex-row items-center justify-center">
         <p className="text-xl text-center mr-4">{props.category}</p>
