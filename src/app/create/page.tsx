@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function Home() {
   const [inputs, setInputs] = useState<string[]>([]);
   const [imageUrl, setImageUrl] = useState<string>("");
+  const [editIndex, setEditIndex] = useState<number>(-1);
 
   useEffect(() => {
     const storedInputs = JSON.parse(localStorage.getItem("inputs") || "[]");
@@ -76,6 +77,21 @@ export default function Home() {
     localStorage.setItem("inputs", JSON.stringify([]));
   };
 
+  const handleEditClick = (index: number) => {
+    setEditIndex(index);
+  };
+
+  const handleEditInputChange = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    if (editIndex !== -1) {
+      const newInputs = [...inputs];
+      newInputs[editIndex] = event.target.value;
+      setInputs(newInputs);
+      localStorage.setItem("inputs", JSON.stringify(newInputs));
+    }
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       {/* input to create a title and an image presentation */}
@@ -116,13 +132,27 @@ export default function Home() {
         {inputs.map((input, index) => (
           <div key={index} className="flex items-center mt-2">
             <button
+              className="px-2 py-1 text-white bg-blue-500 rounded hover:bg-blue-600 mr-2"
+              onClick={() => handleEditClick(index)}
+            >
+              {"Edit"}
+            </button>
+            <button
               className="px-2 py-1 text-white bg-green-500 rounded hover:bg-green-600 mr-2"
               onClick={() => handleButtonLeftClick(index)}
               disabled={index === 0}
             >
               {"⬆"}
             </button>
-            {isImageUrl(input) ? (
+            {editIndex === index ? (
+              <input
+                placeholder="Enter text / image url"
+                value={input}
+                onChange={handleEditInputChange}
+                className="border border-gray-400 rounded px-2 py-1 bg-black"
+                id={`input-${index}`}
+              />
+            ) : isImageUrl(input) ? (
               <Image
                 src={input}
                 alt="Loaded from URL"
@@ -137,6 +167,7 @@ export default function Home() {
                 value={input}
                 onChange={(event) => handleInputChange(event, index)}
                 className="border border-gray-400 rounded px-2 py-1 bg-black"
+                id={`input-${index}`}
               />
             )}
             <button
