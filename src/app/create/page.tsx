@@ -117,16 +117,16 @@ export default function Home() {
         />
       )}
       <button
-        className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
-        onClick={handleButtonClick}
-      >
-        Add Text or Image Input
-      </button>
-      <button
-        className="px-4 py-2 text-white bg-red-500 rounded hover:bg-red-600 ml-2"
+        className="px-4 py-2 my-1 text-white bg-red-500 rounded hover:bg-red-600 ml-2"
         onClick={handleResetAllClick}
       >
         Reset All
+      </button>
+      <button
+        className="px-4 py-2 my-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+        onClick={handleButtonClick}
+      >
+        Add Text or Image Input
       </button>
       <div className="mt-4 flex flex-col items-start">
         {inputs.map((input, index) => (
