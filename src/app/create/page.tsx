@@ -1,7 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Home() {
+  const [title, setTitle] = useState<string>("");
   const [inputs, setInputs] = useState<string[]>([]);
   const [imageUrl, setImageUrl] = useState<string>("");
   const [editIndex, setEditIndex] = useState<number>(-1);
@@ -54,8 +57,10 @@ export default function Home() {
     const imageUrl = event.target.value;
     if (urlPattern.test(imageUrl)) {
       setImageUrl(imageUrl);
+      localStorage.setItem("imageUrl", imageUrl);
     } else {
       setImageUrl("");
+      localStorage.removeItem("imageUrl");
     }
   };
 
@@ -90,14 +95,34 @@ export default function Home() {
       localStorage.setItem("inputs", JSON.stringify(newInputs));
     }
   };
+  useEffect(() => {
+    const storedInputs = JSON.parse(localStorage.getItem("inputs") || "[]");
+    setInputs(storedInputs);
+    const storedTitle = localStorage.getItem("title") || "";
+    const storedImageUrl = localStorage.getItem("imageUrl") || "";
+    setTitle(storedTitle);
+    setImageUrl(storedImageUrl);
+  }, []);
+  const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newTitle = event.target.value;
+    setTitle(newTitle);
+    localStorage.setItem("title", newTitle);
+  };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
       {/* input to create a title and an image presentation */}
+      <Link href="/create/preview">
+        <button className="px-4 py-2 my-2 text-white bg-green-500 rounded hover:bg-green-600">
+          Preview
+        </button>
+      </Link>
       <input
         type="text"
         placeholder="Enter title"
         className="border border-gray-400 rounded px-2 py-1 bg-black"
+        value={title}
+        onChange={handleTitleChange}
       />
       <input
         type="text"
