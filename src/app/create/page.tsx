@@ -1,6 +1,5 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 export default function Home() {
   const [inputs, setInputs] = useState<string[]>([]);
@@ -61,7 +60,7 @@ export default function Home() {
   };
 
   const isImageUrl = (text: string) => {
-    const urlPattern = /\.(webp)$/i;
+    const urlPattern = /\.(jpeg|jpg|png|webp)$/i;
     return urlPattern.test(text);
   };
 
@@ -108,13 +107,7 @@ export default function Home() {
         onChange={handleImageUrlChange}
       />
       {imageUrl && (
-        <Image
-          src={imageUrl}
-          alt="Loaded from URL"
-          className="max-w-full mt-2"
-          width={800}
-          height={800}
-        />
+        <img src={imageUrl} alt="Loaded from URL" className="max-w-full mt-2" />
       )}
       <button
         className="px-4 py-2 my-1 text-white bg-red-500 rounded hover:bg-red-600 ml-2"
@@ -153,12 +146,10 @@ export default function Home() {
                 id={`input-${index}`}
               />
             ) : isImageUrl(input) ? (
-              <Image
+              <img
                 src={input}
                 alt="Loaded from URL"
                 className="max-w-full mt-2"
-                width={800}
-                height={800}
               />
             ) : (
               <input
