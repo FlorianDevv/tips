@@ -34,9 +34,9 @@ export default function Preview() {
         <img src={imageUrl} alt="Loaded from URL" className="max-w-full mt-2" />
       )}
       <h1 className="text-3xl font-bold mt-2">{title}</h1>
-      <div className="mt-4 flex flex-col items-start">
+      <div className="mt-4 flex flex-col w-full ">
         {inputs.map((input, index) => (
-          <div key={index} className="flex items-center mt-2">
+          <div key={index} className="flex items-center text-center mt-2 ">
             {isImageUrl(input) ? (
               <img
                 src={input}
@@ -44,7 +44,9 @@ export default function Preview() {
                 className="max-w-full mt-2"
               />
             ) : (
-              <p className="text-lg">{input}</p>
+              <div className="whitespace-pre-wrap w-full">
+                <p className="text-lg p-4 max-w-full break-words">{input}</p>
+              </div>
             )}
           </div>
         ))}
