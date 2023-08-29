@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function Preview() {
   const [title, setTitle] = useState<string>("");
@@ -23,6 +24,12 @@ export default function Preview() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
+      <Link href="/create">
+        <button className="px-4 py-2 my-2 text-white bg-blue-500 rounded hover:bg-blue-600">
+          Back
+        </button>
+      </Link>
+
       {imageUrl && (
         <img src={imageUrl} alt="Loaded from URL" className="max-w-full mt-2" />
       )}
