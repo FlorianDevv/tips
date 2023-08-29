@@ -7,11 +7,14 @@ export default function Home() {
   const [title, setTitle] = useState<string>("");
   const [inputs, setInputs] = useState<string[]>([]);
   const [imageUrl, setImageUrl] = useState<string>("");
-  const [editIndex, setEditIndex] = useState<number>(-1);
 
   useEffect(() => {
     const storedInputs = JSON.parse(localStorage.getItem("inputs") || "[]");
     setInputs(storedInputs);
+    const storedTitle = localStorage.getItem("title") || "";
+    setTitle(storedTitle);
+    const storedImageUrl = localStorage.getItem("imageUrl") || "";
+    setImageUrl(storedImageUrl);
   }, []);
 
   const handleInputChange = (
@@ -64,9 +67,10 @@ export default function Home() {
     }
   };
 
-  const isImageUrl = (text: string) => {
-    const urlPattern = /\.(jpeg|jpg|png|webp)$/i;
-    return urlPattern.test(text);
+  const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newTitle = event.target.value;
+    setTitle(newTitle);
+    localStorage.setItem("title", newTitle);
   };
 
   const handleDeleteClick = (index: number) => {
@@ -78,35 +82,11 @@ export default function Home() {
 
   const handleResetAllClick = () => {
     setInputs([]);
-    localStorage.setItem("inputs", JSON.stringify([]));
-  };
-
-  const handleEditClick = (index: number) => {
-    setEditIndex(index);
-  };
-
-  const handleEditInputChange = (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    if (editIndex !== -1) {
-      const newInputs = [...inputs];
-      newInputs[editIndex] = event.target.value;
-      setInputs(newInputs);
-      localStorage.setItem("inputs", JSON.stringify(newInputs));
-    }
-  };
-  useEffect(() => {
-    const storedInputs = JSON.parse(localStorage.getItem("inputs") || "[]");
-    setInputs(storedInputs);
-    const storedTitle = localStorage.getItem("title") || "";
-    const storedImageUrl = localStorage.getItem("imageUrl") || "";
-    setTitle(storedTitle);
-    setImageUrl(storedImageUrl);
-  }, []);
-  const handleTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const newTitle = event.target.value;
-    setTitle(newTitle);
-    localStorage.setItem("title", newTitle);
+    localStorage.removeItem("inputs");
+    setImageUrl("");
+    localStorage.removeItem("imageUrl");
+    setTitle("");
+    localStorage.removeItem("title");
   };
 
   return (
@@ -131,9 +111,7 @@ export default function Home() {
         value={imageUrl}
         onChange={handleImageUrlChange}
       />
-      {imageUrl && (
-        <img src={imageUrl} alt="Loaded from URL" className="max-w-full mt-2" />
-      )}
+
       <button
         className="px-4 py-2 my-1 text-white bg-red-500 rounded hover:bg-red-600 ml-2"
         onClick={handleResetAllClick}
@@ -150,42 +128,20 @@ export default function Home() {
         {inputs.map((input, index) => (
           <div key={index} className="flex items-center mt-2">
             <button
-              className="px-2 py-1 text-white bg-blue-500 rounded hover:bg-blue-600 mr-2"
-              onClick={() => handleEditClick(index)}
-            >
-              {"Edit"}
-            </button>
-            <button
               className="px-2 py-1 text-white bg-green-500 rounded hover:bg-green-600 mr-2"
               onClick={() => handleButtonLeftClick(index)}
               disabled={index === 0}
             >
               {"⬆"}
             </button>
-            {editIndex === index ? (
-              <input
-                placeholder="Enter text / image url"
-                value={input}
-                onChange={handleEditInputChange}
-                className="border border-gray-400 rounded px-2 py-1 bg-black"
-                id={`input-${index}`}
-              />
-            ) : isImageUrl(input) ? (
-              <img
-                src={input}
-                alt="Loaded from URL"
-                className="max-w-full mt-2"
-              />
-            ) : (
-              <input
-                type="text"
-                placeholder="Enter text / image url"
-                value={input}
-                onChange={(event) => handleInputChange(event, index)}
-                className="border border-gray-400 rounded px-2 py-1 bg-black"
-                id={`input-${index}`}
-              />
-            )}
+            <input
+              placeholder="Enter text / image url"
+              value={input}
+              onChange={(event) => handleInputChange(event, index)}
+              className="border border-gray-400 rounded px-2 py-1 bg-black"
+              id={`input-${index}`}
+            />
+
             <button
               className="px-2 py-1 text-white bg-green-500 rounded hover:bg-green-600 ml-2"
               onClick={() => handleButtonRightClick(index)}
