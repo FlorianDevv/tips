@@ -3,7 +3,7 @@
     "Gaming",
     "Cinema",
     "Food",
-    "Divertissment",
+    "Divertissement",
     "Money",
     "Music",
     "IOS",
@@ -112,19 +112,19 @@
       },
       "texts": {
         "1": "|text-xl justify-center |Connaisais-tu le menu secret de Burger King ?",
-        "2": "|text-4xl |Tip 1 Description",
-        "3": "|text-2xl |Additional Info",
-        "4": "| | More Info",
-        "5": "| | Even More Info",
-        "6": "|text-2xl| Additional Details",
-        "7": "| | Important Note",
-        "8": "|text-center text-2xl| Conclusion"
+        "2": "|text-lg p-2 | Alors oui, il y a un menu secret chez Burger King, et il est disponible pour les étudiants.",
+        "3": "|text-lg p-2 |Mais la vérité c'est qui va verifier que vous êtes étudiant ? (bon faut pas abuser non plus)",
+        "4": "|text-lg p-2|Le menu est assez bien caché sur les bornes, puisqu'il faut aller dans les bon plans et tout en bas normalement il y a le menu étudiant à la fin.",
+        "5": "| text-lg p-2|Le menu contient pour 5€95 un burger, une frite, une boisson et un supplément. (le supplément peut être un dessert ou un autre burger ou une autre frite, mais le mieux c'est burger)",
+        "6": "|text-lg p-2|Ducoup l'astuce c'est de prendre 2 menu étudiant (si vous avez vraiment une grosse faim) et vous pourrez avoir  4burgers, 2 frites, 2 boissons pour 11€90 ce qui est vraiment le meilleur en rapport qualité prix chez Burger King.",
+        "7": "|text-lg p-2|",
+        "8": "|text-lg p-2|"
       }
     },
     "Animesama": {
       "url": "Anime-sama",
       "title": "Un site pour regarder des animes gratuitement ?",
-      "category": "Divertissment",
+      "category": "Divertissement",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1143563371397009558/anime-sama.webp",
       "images": {
         "1": "|30vw||m-4|",
