@@ -150,27 +150,29 @@
     "Steam1": {
       "url": "Jouer-aux-jeux-steam-gratuitement-de-vos-amis",
       "title": "Jouer aux jeux steam gratuitement de vos amis ?",
-      "category": "Money",
+      "category": "Money,Gaming",
       "img": "https://cdn.discordapp.com/attachments/1142396385472282786/1143571137238929520/steam_free.webp",
       "images": {
-        "1": "|100vw||m-4|",
-        "2": "|50vw|| |",
+        "1": "| || |",
+        "2": "| || |",
         "3": "| || |",
-        "4": "| || |",
-        "5": "| || |",
+        "4": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1146371311837388840/10911149881661438734gol1.webp",
+        "5": "| || |https://cdn.discordapp.com/attachments/1142396385472282786/1146372813897351189/coche.webp",
         "6": "| || | ",
         "7": "| || | ",
-        "8": "| || |"
+        "8": "| || |",
+        "9": "| || |"
       },
       "texts": {
-        "1": "|text-3xl text-center| text 1",
-        "2": "|text-4xl text-start| text 2",
-        "3": "|text-2xl text-end color| text 3",
-        "4": "| | text 4",
-        "5": "| | text 5",
-        "6": "|text-2xl| text 6",
-        "7": "| | text 7",
-        "8": "|text-center text-2xl| text 8"
+        "1": "|text-xl my-5 text-center| Alors oui, vous pouvez jouer aux jeux de vos amis gratuitement, mais il y a une condition.",
+        "2": "| p-2  text-lg text-start| Premierement, votre ami doit se connecter au moins une fois à Steam sur votre ordinateur.",
+        "3": "| p-2 text-lg  text-end color| Pour cela, il a la possibilité de faire un scan qr code avec l'application Steam sur son téléphone. Cela evitera qu'il ait à rentrer son mot de passe sur votre ordinateur.",
+        "4": "|p-2 text-lg| ensuite allez dans les paramètres de Steam, puis dans la section famille, et cliquez sur \"Autoriser le partage de la biliothèque sur cet appareil\".",
+        "5": "| p-2 text-lg|Cochez ensuite les cases correspondant aux comptes avec lesquels vous souhaitez partager votre bibliothèque.",
+        "6": "| p-2 text-lg|Puis normalement vous pouvez vous deconnecter du compte de votre ami, et vous pouvez jouer à ses jeux gratuitement.",
+        "7": "| p-2 text-lg|Et vous pouvez également jouer aux jeux online avec cette méthode, voir vous faire des comptes smurfs pour vous (ce n'est pas très éthique mais bon).",
+        "8": "| p-2 text-lg|Sachez que vous ne pouvez pas jouer aux jeux de votre ami si il est en train de jouer à un jeu. Mais vous pouvez le faire si vous lancer le jeu avant que votre ami lance un jeu de sa bibliothèque et que vous coupez via le pare-feu la connexion à Steam mais c'est un peu compliqué et pas sur que c'est autorisé par steam (marche pas pour les jeux online, il faut obligatoirement que vous soyez en ligne). ",
+        "9": "| p-2 text-lg|Lien pour plus d'information: https://help.steampowered.com/fr/faqs/view/57A7-503C-991F-E9A8"
       }
     }
   }
